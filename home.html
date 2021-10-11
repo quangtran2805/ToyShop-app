@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+  <title>Toys-Shop</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="popup" id="popup">
+      <span class="popup__opacity"></span>
+      <div class="popup__login">
+        <div class="popup__heading">
+          <h3>Login</h3>
+          <span class="popup__close">x</span>
+        </div>
+        <form>
+          <input type="text" placeholder="Your Name" required class="popup__input" />
+          <input type="email" placeholder="Your Email" required class="popup__input" />
+          <input type="password" placeholder="Password" required class="popup__input" />
+          <button type="submit" class="popup__btn">LOGIN</button>
+        </form>
+        <div class="popup__down">
+          <button class="popup__close">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="slideshow">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="./img/b1.jpg" style="width: 100%" />
+          <div class="slideshow-info">
+            <h1 class="slideshow-title">Best Toys And Dolls For Kids</h1>
+            <p class="slideshow-desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean
+              commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor
+            </p>
+            <button class="slideshow-btn">READ MORE</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/b2.jpg" style="width: 100%" />
+          <div class="slideshow-info">
+            <h1 class="slideshow-title">Pick The Best Toy For Your Kid</h1>
+            <p class="slideshow-desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean
+              commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor
+            </p>
+            <button class="slideshow-btn">READ MORE</button>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/b3.jpg" style="width: 100%" />
+          <div class="slideshow-info">
+            <h1 class="slideshow-title">
+              Sort Toys And Teddy bears For Kids
+            </h1>
+            <p class="slideshow-desc">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean
+              commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor
+            </p>
+            <button class="slideshow-btn">READ MORE</button>
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="header__bar">
+        <div class="header__top">
+          <i class="fas fa-phone-volume"></i>
+          <p class="header__top-tel">+(000)123 4565 32</p>
+          <i class="fas fa-envelope header__top-envel"></i>
+          <p class="header__top-mail">info@example1.com</p>
+        </div>
+        <div class="header__inner">
+          <h1 class="header__logo">
+            <a href="./home.html">Toys-Shop</a>
+          </h1>
+          <form action="#" class="header__search">
+            <input type="text" class="header__input" placeholder="Search" />
+            <button class="header__btn">Search</button>
+          </form>
+          <div class="header__icon">
+            <i class="far fa-heart"></i>
+            <i class="far fa-user" id="login"></i>
+            <a href="./checkOut.html">
+              <i class="fas fa-cart-arrow-down" id="icon-cart">
+                <span class="header__icon-number"></span>
+              </i>
+            </a>
+          </div>
+        </div>
+        <nav class="header__menu">
+          <div class="header__menu-iconBar">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="./home.html" class="header__menu-link header__active">HOME</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./shopNow.html" class="header__menu-link">ABOUT</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./shopNow.html" class="header__menu-link">SERVICE</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="./shopNow.html" class="header__menu-link">SHOP NOW</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">PAGE <i class="fas fa-chevron-down"></i></a>
+              <ul class="header__menu-children">
+                <li class="header__menu-children-item">
+                  <a href="" class="header__menu-children-link">404 PAGE</a>
+                </li>
+                <li class="header__menu-children-item">
+                  <a href="" class="header__menu-children-link">TYPOGRAPHY</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">PRODUCT <i class="fas fa-chevron-down"></i></a>
+              <ul class="header__menu-children">
+                <li class="header__menu-children-item">
+                  <a href="" class="header__menu-children-link">KIDS TOYS</a>
+                </li>
+                <li class="header__menu-children-item">
+                  <a href="" class="header__menu-children-link">DOLLS</a>
+                </li>
+                <li class="header__menu-children-item">
+                  <a href="" class="header__menu-children-link">KEY TOYS</a>
+                </li>
+                <li class="header__menu-children-item">
+                  <a href="" class="header__menu-children-link">BOYS TOYS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="./shopNow.html" class="header__menu-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="selected">
+      <div class="selected__inner">
+        <h2 class="title product__title"  data-aos="fade-down">Best Products</h2>
+        <ul class="selected__list"  data-aos="fade-up">
+          <li class="selected__item">
+            <img src="./img/a1.jpg" alt="" class="selected__image" />
+            <p class="selected__name">Baby Toys</p>
+          </li>
+          <li class="selected__item">
+            <img src="./img/a2.jpg" alt="" class="selected__image" />
+            <p class="selected__name">Lite Brite</p>
+          </li>
+          <li class="selected__item">
+            <img src="./img/a3.jpg" alt="" class="selected__image" />
+            <p class="selected__name">Key Toys</p>
+          </li>
+          <li class="selected__item">
+            <img src="./img/a4.jpg" alt="" class="selected__image" />
+            <p class="selected__name">Play Toys</p>
+          </li>
+          <li class="selected__item">
+            <img src="./img/a5.jpg" alt="" class="selected__image" />
+            <p class="selected__name">Gift Toys</p>
+          </li>
+          <li class="selected__item">
+            <img src="./img/a6.jpg" alt="" class="selected__image" />
+            <p class="selected__name">Soft Toys</p>
+          </li>
+          <div class="selected__sale">
+            <h3 class="selected__sale-title">
+              GET UP TO <span>70% OFF</span> ON SELECTED TOYS
+            </h3>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="arrival">
+      <div class="arrival__inner">
+        <h2 class="title title-white"  data-aos="fade-down" >New Arrivals</h2>
+        <ul class="arrival__list">
+          <li class="arrival__item"  data-aos="zoom-in" data-aos-delay="500">
+            <img src="./img/a1.jpg" alt="" class="arrival__image" />
+            <h3 class="arrival__name">Soft Toys</h3>
+            <button class="arrival__btn">SHOP NOW</button>
+          </li>
+          <li class="arrival__item"  data-aos="zoom-in" data-aos-delay="500">
+            <img src="./img/a2.jpg" alt="" class="arrival__image" />
+            <h3 class="arrival__name">Soft Toys</h3>
+            <button class="arrival__btn">SHOP NOW</button>
+          </li>
+          <li class="arrival__item"  data-aos="zoom-in" data-aos-delay="500">
+            <img src="./img/a3.jpg" alt="" class="arrival__image" />
+            <h3 class="arrival__name">Soft Toys</h3>
+            <button class="arrival__btn">SHOP NOW</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="review__inner">
+        <h2 class="title title-white" data-aos="fade-down">Customers Review</h2>
+        <ul class="review__list">
+          <li class="review__item" data-aos="fade-right">
+            <div class="review__heading">
+              <img src="./img/t1.jpg" alt="" class="review__logo" />
+              <div class="review__name">
+                <h3>Milky Deo</h3>
+                <span>Duis posuere</span>
+              </div>
+            </div>
+            <img src="./img/tt1.jpg" alt="" class="review__image" />
+            <p class="review__desc">
+              <i class="fas fa-quote-left"></i>
+              velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+              Suspendisse tincidunt velit sagittis vehicula. Duis posuere
+              velit sagittis vehicula. Duis posuere
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </li>
+          <li class="review__item" data-aos="fade-left">
+            <div class="review__heading">
+              <img src="./img/t2.jpg" alt="" class="review__logo" />
+              <div class="review__name">
+                <h3>Sam Deo</h3>
+                <span>Duis posuere</span>
+              </div>
+            </div>
+            <img src="./img/tt2.jpg" alt="" class="review__image" />
+            <p class="review__desc">
+              <i class="fas fa-quote-left"></i>
+              velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+              Suspendisse tincidunt velit sagittis vehicula. Duis posuere
+              velit sagittis vehicula. Duis posuere
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lastest">
+      <div class="lastest__inner">
+        <h2 class="title" data-aos="fade-down">Latest Toys</h2>
+        <div class="lastest__heading">
+          <img src="./img/cc1.jpg" alt="" class="lastest__image" data-aos="zoom-in"/>
+          <p class="lastest__desc">
+            velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+            Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit
+            sagittis vehicula. Duis posuere
+          </p>
+          <button class="lastest__btn">SHOP NOW</button>
+        </div>
+        <div class="lastest__main">
+          <div class="lastest__left" data-aos="fade-up">
+            <img src="./img/cc2.jpg" alt="" class="lastest__image" data-aos="zoom-in"/>
+            <p class="lastest__desc">
+              velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+              Suspendisse tincidunt velit sagittis vehicula. Duis posuere
+              velit sagittis vehicula. Duis posuere
+            </p>
+            <button class="lastest__btn">SHOP NOW</button>
+          </div>
+          <div class="lastest__right" data-aos="fade-up">
+            <div class="lastest__info">
+              <img src="./img/tt1.jpg" alt="" class="lastest__image" data-aos="zoom-in"/>
+              <p class="lastest__desc">
+                velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+                Suspendisse tincidunt velit sagittis vehicula. Duis posuere
+                velit sagittis vehicula. Duis posuere
+              </p>
+              <button class="lastest__btn">SHOP NOW</button>
+            </div>
+            <div class="lastest__info">
+              <img src="./img/tt2.jpg" alt="" class="lastest__image" data-aos="zoom-in"/>
+              <p class="lastest__desc">
+                velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+                Suspendisse tincidunt velit sagittis vehicula. Duis posuere
+                velit sagittis vehicula. Duis posuere
+              </p>
+              <button class="lastest__btn">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="map__iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.4604550706!2d106.415031120071!3d10.754666396423705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1632911719828!5m2!1svi!2s"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <div class="map__address">
+        <i class="far fa-map"></i>
+        <p>25478 Road St.121</p>
+        <p>USA New Hill</p>
+        <i class="fas fa-phone-volume"></i>
+        <p>+(000)123 4565</p>
+        <p>+(010)123 4565</p>
+        <i class="far fa-envelope"></i>
+        <p>info@example1.com</p>
+        <p>info@example2.com</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footer__touch">
+        <h2 class="title title-white">Get In Touch Us</h2>
+        <div class="footer__icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fab fa-vk"></i>
+        </div>
+        <p class="footer__desc">
+          velit sagittis vehicula. Duis posuere ex in mollis iaculis.
+          Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit
+          sagittis vehicula. Duis posuere
+        </p>
+        <input type="text" class="footer__input" placeholder="Email" />
+        <button class="footer__btn">SUBSCRIBE</button>
+      </div>
+      <div class="footer__copyright">
+        © 2018 Toys-Shop. All Rights Reserved | Design by
+        <a href="">W3Layouts</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/home.js"></script>
+  <script src="./JS/script.js"></script>
+  <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+</body>
+
+</html>

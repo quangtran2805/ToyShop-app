@@ -1,0 +1,86 @@
+.footer{
+
+    &__touch{
+        padding: 100px 0;
+        text-align: center;
+        background-color: $green-color;
+        
+    }
+
+    &__icon{
+        margin-bottom: 20px;
+        i{
+            color: $main-color;
+            border: 1px solid $main-color;
+            padding: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+
+            &:hover{
+                color: white;
+                border: 1px solid white;
+                transition: 0.5s;
+            }
+        }
+    }
+    &__desc{
+        max-width: 70%;
+        margin: 0 auto;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    &__input{
+        width: 35%;
+        margin: 0 auto 20px;
+        padding: 10px;
+        outline: none;
+        display: block;
+        border: 1px solid black;
+    }
+    &__btn{
+        padding: 15px 30px;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            transition: 0.5s;
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+        padding: 25px 0;
+        background-color: black;
+        color: white;
+
+        a{
+            color: $main-color;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        &__touch{
+            padding: 50px 0;
+        }
+        &__desc{
+            max-width: 100%;
+            padding: 0 30px;
+        }
+    }
+    @media screen and (max-width:767px) {
+		&__input{
+            width: 80%;
+        }
+        &__copyright{
+            line-height: 1.4;
+        }
+	}
+}

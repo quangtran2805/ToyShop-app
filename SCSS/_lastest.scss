@@ -1,0 +1,88 @@
+.lastest {
+  padding: 100px 0;
+
+  &__inner {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  &__desc {
+    margin: 20px 0;
+    line-height: 1.8;
+  }
+  &__btn {
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: black;
+      transition: 0.5s;
+    }
+  }
+  &__main {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__info:first-child {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    padding: 50px 0;
+
+    &__inner {
+      width: 100%;
+      margin: 0;
+      padding: 0 40px;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__left {
+      > img {
+        height: 840px;
+        padding-right: 10px;
+      }
+    }
+    &__right {
+      padding-left: 10px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 50px 0;
+
+    &__inner {
+      width: 100%;
+      margin: 0;
+      padding: 0 40px;
+    }
+    &__image {
+      width: 100%;
+    }
+
+    &__main {
+      flex-direction: column;
+    }
+    &__left {
+      margin-bottom: 20px;
+      > img {
+        height: 729px;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &__inner {
+      padding: 0 10px;
+    }
+    &__left {
+      margin-bottom: 20px;
+      > img {
+        height: 527px;
+      }
+    }
+  }
+}

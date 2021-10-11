@@ -1,0 +1,162 @@
+.product {
+  padding: 80px 0;
+
+  &__heading {
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__filter {
+    width: 25%;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    padding: 30px 15px;
+
+    &-search,
+    &-price {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+
+      label {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      select,
+      input {
+        padding: 10px;
+        width: 90%;
+        border: none;
+        outline: none;
+        background-color: #f5f5f5;
+      }
+      select{
+        width: 100%;
+      }
+      button{
+        width: 10%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        margin-left: -7px;
+        background-color: #f5f5f5;
+        border-left: 1px solid #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__list {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 10px;
+  }
+  &__item {
+    width: calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  &__image {
+    border: inherit;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    &:hover .product__view {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 1s;
+      opacity: 1;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+  }
+  &__name {
+    color: #959596;
+    font-size: 13px;
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  &__btn {
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: black;
+    border: none;
+
+    i {
+      color: white;
+      font-size: 18px;
+    }
+
+    &:hover {
+      background-color: orange;
+      transition: 0.5s;
+    }
+  }
+  &__view {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 14px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+
+    &:hover {
+      background-color: $green-color;
+      transition: 0.5s;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &__container {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    &__filter {
+      width: 100%;
+    }
+    &__list {
+      width: 100%;
+      padding-right: 0;
+      margin-top: 20px;
+    }
+    &__item {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item {
+      width: 100%;
+    }
+  }
+}

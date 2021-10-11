@@ -1,0 +1,86 @@
+.review {
+  background: url("../img/b1.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+
+  &__inner {
+    width: 75%;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 49%;
+    box-shadow: 1px 1px 6px 0px black;
+    background: rgba(255, 255, 255, 0.7215686274509804);
+    padding: 30px;
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    border-radius: 50%;
+  }
+  &__name {
+    margin-left: 50px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    span {
+      font-size: 12px;
+      color: $green-color;
+    }
+  }
+  &__desc {
+    margin-top: 20px;
+    line-height: 1.4;
+
+    i {
+      font-size: 28px;
+      color: $pink-color;
+      padding: 0 5px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    padding: 50px 0;
+
+    &__inner {
+      width: 100%;
+      padding: 0 40px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 50px 0;
+
+    &__inner {
+      width: 100%;
+      padding: 0 40px;
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__item:first-child {
+      margin-bottom: 20px;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &__inner {
+      padding: 0 10px;
+    }
+    &__image {
+      width: 98%;
+    }
+  }
+}

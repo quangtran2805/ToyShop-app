@@ -1,0 +1,47 @@
+.arrival{
+    background-color:$green-color;
+    padding: 100px 0;
+
+    &__inner{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__name{
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__btn{
+        padding: 20px 30px;
+        border-radius: 25px;
+        border: none;
+        background-color: $main-color;
+        color: white;
+        border: 1px solid $main-color;
+        cursor: pointer;
+
+        &:hover{
+            border: 1px solid $main-color;
+            background-color: transparent;
+            color: $main-color;
+            transition: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        padding: 50px 0;
+
+        &__inner{
+            width: 100%;
+        }
+        &__item{
+            margin-bottom: 20px;
+        }
+    }
+}

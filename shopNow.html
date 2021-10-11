@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shopNow.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Toys-Shop</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="popup" id="popup">
+            <span class="popup__opacity"></span>
+            <div class="popup__login">
+                <div class="popup__heading">
+                    <h3>Login</h3>
+                    <span class="popup__close">x</span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Your Name" required class="popup__input">
+                    <input type="email" placeholder="Your Email" required class="popup__input">
+                    <input type="password" placeholder="Password" required class="popup__input">
+                    <button type="submit" class="popup__btn">LOGIN</button>
+                </form>
+                <div class="popup__down">
+                    <button class="popup__close">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="header__bar">
+                <div class="header__top">
+                    <i class="fas fa-phone-volume"></i>
+                    <p class="header__top-tel">+(000)123 4565 32</p>
+                    <i class="fas fa-envelope"></i>
+                    <p class="header__top-mail">info@example1.com</p>
+                </div>
+                <div class="header__inner">
+                    <h1 class="header__logo">
+                        <a href="./home.html">Toys-Shop</a>
+                    </h1>
+                    <form action="#" class="header__search">
+                        <input type="text" class="header__input" placeholder="Search" />
+                        <button class="header__btn">Search</button>
+                    </form>
+                    <div class="header__icon">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-user" id="login"></i>
+                        <i class="fas fa-cart-arrow-down" id="icon-cart">
+                            <span class="header__icon-number"></span>
+                        </i>
+                    </div>
+                </div>
+                <nav class="header__menu">
+                    <div class="header__menu-iconBar">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="./home.html" class="header__menu-link header__active">HOME</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./shopNow.html" class="header__menu-link">ABOUT</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./shopNow.html" class="header__menu-link">SERVICE</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./shopNow.html" class="header__menu-link">SHOP NOW</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./shopNow.html" class="header__menu-link">PAGE <i
+                                    class="fas fa-chevron-down"></i></a>
+                            <ul class="header__menu-children">
+                                <li class="header__menu-children-item">
+                                    <a href="" class="header__menu-children-link">404 PAGE</a>
+                                </li>
+                                <li class="header__menu-children-item">
+                                    <a href="" class="header__menu-children-link">TYPOGRAPHY</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./shopNow.html" class="header__menu-link">PRODUCT <i
+                                    class="fas fa-chevron-down"></i></a>
+                            <ul class="header__menu-children">
+                                <li class="header__menu-children-item">
+                                    <a href="" class="header__menu-children-link">KIDS TOYS</a>
+                                </li>
+                                <li class="header__menu-children-item">
+                                    <a href="" class="header__menu-children-link">DOLLS</a>
+                                </li>
+                                <li class="header__menu-children-item">
+                                    <a href="" class="header__menu-children-link">KEY TOYS</a>
+                                </li>
+                                <li class="header__menu-children-item">
+                                    <a href="" class="header__menu-children-link">BOYS TOYS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./shopNow.html" class="header__menu-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__breadcumb">
+                <ul class="header__breadcumb-list">
+                    <li class="header__breadcumb-item">
+                        <a href="./home.html" class="header__breadcumb-link">Home</a>
+                        <span>/ /</span>
+                    </li>
+                    <li class="header__breadcumb-item">Shop Now</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="total">
+            <div class="total__close">x</div>
+            <ul class="total__list">
+            </ul>
+            <div class="total__price">
+                <h3 class="total__subtotal"></h3>
+                <a href="./checkOut.html" class="total__checkout">CHECK OUT</a>
+            </div>
+        </section>
+
+        <section class="product">
+            <h2 class="product__heading">Toys Shop</h2>
+            <div class="product__container">
+                <form class="product__filter">
+                    <div class="product__filter-search">
+                        <label htmlFor="">Search</label>
+                        <input type="text" placeholder="nhập tên sản phẩm" id="product__input" />
+                        <button onclick="handleProduct()"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="product__filter-price">
+                        <label htmlFor="">Price</label>
+                        <select id="mySelect" onchange="handleChangeSort()">
+                            <option value="all">Không lựa chọn</option>
+                            <option value="1">Từ thấp tới cao</option>
+                            <option value="2">Từ cao tới thấp</option>
+                        </select>
+                    </div>
+                </form>
+                <ul class="product__list"></ul>
+            </div>
+
+        </section>
+
+        <section class="map">
+            <div class="map__iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.4604550706!2d106.415031120071!3d10.754666396423705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1632911719828!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="map__address">
+                <i class="far fa-map"></i>
+                <p>25478 Road St.121</p>
+                <p> USA New Hill</p>
+                <i class="fas fa-phone-volume"></i>
+                <p>+(000)123 4565</p>
+                <p>+(010)123 4565</p>
+                <i class="far fa-envelope"></i>
+                <p>info@example1.com</p>
+                <p>info@example2.com</p>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="footer__touch">
+                <h2 class="title title-white">Get In Touch Us</h2>
+                <div class="footer__icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fab fa-vk"></i>
+                </div>
+                <p class="footer__desc">velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse
+                    tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+                <input type="text" class="footer__input" placeholder="Email">
+                <button class="footer__btn">SUBSCRIBE</button>
+            </div>
+            <div class="footer__copyright">
+                © 2018 Toys-Shop. All Rights Reserved | Design by <a href="">W3Layouts</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./JS/product.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
