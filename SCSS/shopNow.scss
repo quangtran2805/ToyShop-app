@@ -1,16 +1,16 @@
-@import "./SCSS/variable";
-@import "./SCSS/reset";
+@import "./variable";
+@import "./reset";
 
-@import "./SCSS/header";
-@import "./SCSS/product";
-@import "./SCSS/popup-total";
-@import "./SCSS/map";
-@import "./SCSS/footer";
+@import "./header";
+@import "./product";
+@import "./popup-total";
+@import "./map";
+@import "./footer";
 
 .header {
   &__bar {
     position: relative;
-    background: url("./img/b2.jpg") no-repeat center;
+    background: url("../img/b2.jpg") no-repeat center;
     background-size: cover;
     height: 350px;
   }
