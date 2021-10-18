@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/productList")
+fetch("https://json-api-toyshop.herokuapp.com/productList")
   .then((response) => response.json())
   .then((data) => handleData(data));
 
