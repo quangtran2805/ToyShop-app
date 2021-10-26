@@ -1,4 +1,4 @@
-fetch("https://json-api-toyshop.herokuapp.com/productList")
+fetch("https://json-api-demoapp.herokuapp.com/productToyShop")
   .then((response) => response.json())
   .then((data) => handleData(data));
 
